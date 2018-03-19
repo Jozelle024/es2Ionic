@@ -13,4 +13,10 @@
     <ion-label>Plugged</ion-label>
     <ion-radio value="isPlugged" disabled="isPlugged"></ion-radio>
   </ion-item>
+  <ion-item>
+      <button ion-button color="secondary" (click)="setStorage()">Set Storage</button>
+      <p *ngFor="let user of users">{{user.name}}</p>
+      <button ion-button color="secondary" (click)="getStorage()">Get Storage</button>
+
+  </ion-item>
 </ion-content>

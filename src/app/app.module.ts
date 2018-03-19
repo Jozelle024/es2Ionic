@@ -11,6 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BatteryStatus } from '@ionic-native/battery-status';
+import { Geolocation } from '@ionic-native/geolocation';
+import { NativeStorage } from '@ionic-native/native-storage'; 
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { BatteryStatus } from '@ionic-native/battery-status';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BatteryStatus
+    BatteryStatus,
+    Geolocation,
+    NativeStorage
   ]
 })
 export class AppModule {}
